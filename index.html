@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="topbar">
+      <h5>Tylko dzisiaj! Darmowa dostawa dla zamówień od 100zł</h5>
+    </section>
+    <header>
+      <div>
+        <img class="logo-img" src="image/LOGOwater.png" alt="logo freshwater" />
+        <a href="#" class="logo">Freshwater</a>
+      </div>
+      <div class="search-bar">
+        <div class="search">
+          <form>
+            <input
+              type="text"
+              placeholder="Wpisz czego szukasz"
+              name="search"
+            />
+            <button class="button-search" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="icons">
+        <a href="#" alt="/"
+          ><img class="icon" src="image/User.svg" alt="icon user"
+        /></a>
+        <a href="#" alt="/"
+          ><img class="icon" src="image/Heart.svg" alt="icon heart"
+        /></a>
+        <a href="#" alt="/"
+          ><img class="icon" src="image/Frame.svg" alt="icon basket"
+        /></a>
+        <span>0,00zł</span>
+      </div>
+      <div class="menuToggle"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#">Do lodówek <b>+</b></a>
+          <ul>
+            <li>Filtry wody do lodówek</li>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Bosch</a></li>
+            <li><a href="#">LG</a></li>
+            <li><a href="#">Whirlpool</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">Panasonic</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Do ekspresów <b>+</b></a>
+        </li>
+        <li>
+          <a href="#">Dzbanki, butelki i wkłady filtrujące <b>+</b></a>
+        </li>
+        <li><a href="#">Kawa ziarnista</a></li>
+        <li><a href="#">Coś do kawy</a></li>
+        <li><a href="#">Promocje</a></li>
+      </ul>
+    </nav>
+    <script>
+      let menuToggle = document.querySelector(".menuToggle");
+      let nav = document.querySelector(".navbar");
+      menuToggle.onclick = () => {
+        nav.classList.toggle("active");
+      };
+    </script>
+  </body>
+  <!-- <body>
+    <header>
+      <a href="#" class="logo">Freshwater</a>
+      <input type="checkbox" id="menu-bar" />
+      <label for="menu-bar">Menu</label>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#">Do lodówek +</a>
+          <ul>
+            <li>Filtry wody do lodówek</li>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Bosch</a></li>
+            <li><a href="#">LG</a></li>
+            <li><a href="#">Whirlpool</a></li>
+            <li><a href="#">Panasonic</a></li>
+            <li><a href="#">Panasonic</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Do ekspresów +</a>
+        </li>
+        <li>
+          <a href="#">Dzbanki, butelki i wkłady filtrujące +</a>
+        </li>
+        <li><a href="#">Kawa ziarnista</a></li>
+        <li><a href="#">Coś do kawy</a></li>
+        <li><a href="#">Promocje</a></li>
+      </ul>
+    </nav>
+  </body> -->
+</html>

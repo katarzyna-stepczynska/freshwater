@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Questrial&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+}
+/* TOPBAR========================================================================================================= */
+.topbar {
+  width: 100%;
+  min-height: 2.224rem;
+  color: #000;
+  background: #eff0f5;
+}
+.topbar h5 {
+  padding-top: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding-left: 1rem;
+}
+/* HEADER========================================================================================================= */
+
+header {
+  width: 100%;
+  min-height: 5.625rem;
+  padding-left: 22.5rem;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+header div .logo-img {
+  margin-right: 0.7rem;
+  height: 36px;
+  width: 36px;
+}
+header div .logo {
+  color: #00beff;
+  font-size: 2em;
+  margin-bottom: 2px;
+}
+.search-bar {
+  margin-left: 21.25rem;
+  /* display: none; */
+}
+.search-bar .search form input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #eceef3;
+  width: 339px;
+  height: 38px;
+  border-radius: 19px;
+  color: #eceef3;
+  padding-left: 25px;
+  font-size: 14px;
+}
+input::placeholder {
+  color: #757575;
+}
+input:focus {
+  outline: none;
+}
+.button-search {
+  width: 36px;
+  height: 36px;
+  margin-left: -36px;
+  background-color: #00beff;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+.icons {
+  margin-left: 82px;
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+}
+.icons a {
+  margin-left: 1.8rem;
+}
+.icons span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 1rem;
+}
+.menuToggle {
+  display: none;
+}
+/* NAVBAR-MENU========================================================================================================= */
+.navbar {
+  background: #eff0f5;
+  position: relative;
+}
+
+.navbar ul {
+  position: relative;
+}
+
+.navbar ul li {
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+.navbar ul li a {
+  padding: 20px 25px;
+  font-weight: bold;
+  color: #000;
+  /* display: block; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul li a:hover {
+  color: #00beff;
+}
+
+.navbar ul li ul {
+  position: absolute;
+  left: 0;
+  min-width: 160px;
+  display: none;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+}
+
+.navbar ul li ul li {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  /* TOPBAR========================================================================================================= */
+  .topbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .topbar h5 {
+    width: 13rem;
+    font-size: 13px;
+    padding-left: 0;
+    padding-top: 0.4rem;
+  }
+  /* HEADER========================================================================================================= */
+  header {
+    padding-left: 15px;
+    border: 1px solid #eff0f5;
+  }
+  header div .logo-img {
+    margin-right: 0.5rem;
+    height: 25px;
+    width: 25px;
+  }
+  header div .logo {
+    color: #00beff;
+    font-size: 1.7em;
+  }
+  .search-bar {
+    margin-left: 4.5rem;
+  }
+  .search-bar .search form input[type="text"] {
+    display: none;
+  }
+  .icons {
+    margin-left: 1rem;
+  }
+  .icons a:nth-child(3) {
+    margin: 0;
+  }
+  .icons a:nth-child(1),
+  .icons a:nth-child(2),
+  .icons span {
+    display: none;
+  }
+  .navbar {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    display: none;
+  }
+  .navbar.active {
+    display: initial;
+  }
+  .navbar ul li {
+    width: 100%;
+  }
+  .navbar ul li ul {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .navbar ul li:hover ul li {
+    background-color: aquamarine;
+  }
+  .menuToggle {
+    position: relative;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .navbar.active .menuToggle::before {
+    transform: rotate(45deg);
+    box-shadow: 0 0 #00beff;
+  }
+  .navbar.active .menuToggle::after {
+    transform: rotate(315deg);
+  }
+}
