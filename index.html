@@ -48,13 +48,16 @@
         /></a>
         <span>0,00zł</span>
       </div>
-      <div class="menuToggle"><i class="fa-solid fa-bars"></i></div>
+      <div class="menuToggle"><i class="fa-solid fa-bars bars"></i></div>
     </header>
     <nav class="navbar">
       <ul>
         <li>
           <a href="#"
-            >Do lodówek <b><i class="fa-solid fa-chevron-down arrow"></i></b
+            >Do lodówek
+            <b
+              ><i class="fa-solid fa-chevron-down arrow"></i
+              ><i class="fa-solid fa-chevron-right arrow-mobile"></i></b
           ></a>
           <ul>
             <li>Filtry wody do lodówek</li>
@@ -68,18 +71,37 @@
         </li>
         <li>
           <a href="#"
-            >Do ekspresów <b><i class="fa-solid fa-chevron-down arrow"></i></b
+            >Do ekspresów
+            <b
+              ><i class="fa-solid fa-chevron-down arrow"></i
+              ><i class="fa-solid fa-chevron-right arrow-mobile"></i></b
           ></a>
         </li>
         <li>
           <a href="#"
             >Dzbanki, butelki i wkłady filtrujące
-            <b><i class="fa-solid fa-chevron-down arrow"></i></b
+            <b
+              ><i class="fa-solid fa-chevron-down arrow"></i
+              ><i class="fa-solid fa-chevron-right arrow-mobile"></i></b
           ></a>
         </li>
         <li><a href="#">Kawa ziarnista</a></li>
         <li><a href="#">Coś do kawy</a></li>
         <li><a href="#">Promocje</a></li>
+        <li>
+          <div class="search-mobile">
+            <form>
+              <input
+                type="text"
+                placeholder="Wpisz czego szukasz"
+                name="search"
+              />
+              <button class="button-search-mobile" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </li>
       </ul>
     </nav>
     <script>
@@ -87,39 +109,8 @@
       let nav = document.querySelector(".navbar");
       menuToggle.onclick = () => {
         nav.classList.toggle("active");
+        menuToggle.classList.toggle("active");
       };
     </script>
   </body>
-  <!-- <body>
-    <header>
-      <a href="#" class="logo">Freshwater</a>
-      <input type="checkbox" id="menu-bar" />
-      <label for="menu-bar">Menu</label>
-    </header>
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="#">Do lodówek +</a>
-          <ul>
-            <li>Filtry wody do lodówek</li>
-            <li><a href="#">Samsung</a></li>
-            <li><a href="#">Bosch</a></li>
-            <li><a href="#">LG</a></li>
-            <li><a href="#">Whirlpool</a></li>
-            <li><a href="#">Panasonic</a></li>
-            <li><a href="#">Panasonic</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Do ekspresów +</a>
-        </li>
-        <li>
-          <a href="#">Dzbanki, butelki i wkłady filtrujące +</a>
-        </li>
-        <li><a href="#">Kawa ziarnista</a></li>
-        <li><a href="#">Coś do kawy</a></li>
-        <li><a href="#">Promocje</a></li>
-      </ul>
-    </nav>
-  </body> -->
 </html>

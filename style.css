@@ -130,6 +130,10 @@ input:focus {
 .navbar ul li a b .arrow {
   font-size: 10px;
   margin-left: 0.5rem;
+  display: initial;
+}
+.navbar ul li a b .arrow-mobile {
+  display: none;
 }
 .navbar ul li a:hover {
   color: #00beff;
@@ -138,7 +142,11 @@ input:focus {
 .navbar ul li ul {
   position: absolute;
   left: 0;
-  min-width: 160px;
+  width: 205px;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #eff0f5;
   display: none;
 }
 
@@ -149,6 +157,29 @@ input:focus {
 .navbar ul li ul li {
   position: relative;
   width: 100%;
+}
+.navbar ul li ul li:first-child {
+  padding: 0;
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+  margin-left: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.navbar ul li ul li a {
+  margin-left: 2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  padding-right: 0;
+  padding-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.search-mobile {
+  display: none;
 }
 
 @media (max-width: 900px) {
@@ -201,15 +232,40 @@ input:focus {
   .navbar {
     position: absolute;
     width: 100%;
-    top: 66px;
+    top: 0;
     left: 0;
     display: none;
+    padding: 0;
+    height: 100%;
+    background: white;
   }
   .navbar.active {
     display: initial;
   }
+  .navbar ul {
+  }
   .navbar ul li {
+    background-color: #fff;
     width: 100%;
+    border-bottom: 1px solid #eff0f5;
+    border-left: 1px solid #eff0f5;
+
+    margin-left: 3.5rem;
+  }
+  .navbar ul li a {
+    padding: 1.15rem 0;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: #00beff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar ul li a b .arrow {
+    display: none;
+  }
+  .navbar ul li a b .arrow-mobile {
+    display: initial;
+    font-size: 16px;
   }
   .navbar ul li ul {
     position: relative;
@@ -219,6 +275,7 @@ input:focus {
   .navbar ul li:hover ul li {
     background-color: aquamarine;
   }
+
   .menuToggle {
     position: relative;
     font-size: 28px;
@@ -227,6 +284,18 @@ input:focus {
     justify-content: center;
     align-items: center;
     margin-left: 2rem;
+  }
+  .menuToggle.active {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    z-index: 1000;
   }
   .navbar.active .menuToggle::before {
     transform: rotate(45deg);
