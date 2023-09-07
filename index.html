@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link
       rel="stylesheet"
@@ -164,7 +166,138 @@
         </span>
       </div>
     </section>
+    <section class="products">
+      <h1>Nasze produkty</h1>
+      <div class="slick-products">
+        <div class="product">
+          <img
+            class="product-img"
+            src="./image/pol_il_Tabletki-czyszczace-do-ekspresu-Siemens-Bosch-TZ80001-2w1-oryginal-171.jpg.png"
+            alt="/"
+          />
+          <h4>
+            Tabletki czyszczące do ekspresu Siemens Bosch TZ80001 2w1 - oryginał
+          </h4>
+          <div>
+            <div>
+              <h3>35,40 zł</h3>
+              <h6>38,90 zł</h6>
+            </div>
+            <div>
+              <a href="#" alt="/"
+                ><i class="fa-solid fa-cart-shopping product-basket"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            class="product-img"
+            src="./image/pol_il_3x-Filtr-Seltino-Ocea-zamiennik-do-Philips-Saeco-CA6903-AquaClean-259.jpg.png"
+            alt="/"
+          />
+          <h4>
+            3x Filtr Seltino Ocea zamiennik do Philips Saeco CA6903 AquaClean
+          </h4>
+          <div>
+            <div>
+              <h3>44,20 zł</h3>
+              <h6>52,00 zł</h6>
+            </div>
+            <div>
+              <a href="#" alt="/"
+                ><i class="fa-solid fa-cart-shopping product-basket"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            class="product-img"
+            src="./image/pol_il_2x-Filtr-Seltino-SBH-Ultra-zamiennik-do-Ultra-Clarity-644845-375.jpg.png"
+            alt="/"
+          />
+          <h4>2x Filtr Seltino SBH-Ultra zamiennik do Ultra Clarity 644845</h4>
+          <div>
+            <div>
+              <h3>110,50 zł</h3>
+              <h6>130,00 zł</h6>
+            </div>
+            <div>
+              <a href="#" alt="/"
+                ><i class="fa-solid fa-cart-shopping product-basket"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img
+            class="product-img"
+            src="./image/pol_il_ZESTAW-2x-Odkamieniacz-Seltino-Entkalker-1000-ml-szczoteczka-365.jpg.png"
+            alt="/"
+          />
+          <h4>
+            ZESTAW: 2x Odkamieniacz Seltino Entkalker 1000 ml + szczoteczka
+          </h4>
+          <div>
+            <div>
+              <h3>30,02 zł</h3>
+              <h6>35,32 zł</h6>
+            </div>
+            <div>
+              <a href="#" alt="/"
+                ><i class="fa-solid fa-cart-shopping product-basket"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
+      $(document).ready(function () {
+        $(".slick-products").slick({
+          infinite: true,
+          speed: 300,
+          autoplay: true,
+          arrows: false,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            // {
+            //   breakpoint: 1024,
+            //   settings: {
+            //     slidesToShow: 2,
+            //     slidesToScroll: 1,
+            //     infinite: true,
+            //   },
+            // },
+            // {
+            //   breakpoint: 600,
+            //   settings: {
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1,
+            //   },
+            // },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+
       let menuToggle = document.querySelector(".menuToggle");
       let nav = document.querySelector(".navbar");
       menuToggle.onclick = () => {

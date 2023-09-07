@@ -218,6 +218,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-left: 1rem;
 }
 .benefits div span {
   display: flex;
@@ -228,7 +229,6 @@ input:focus {
   padding: 1rem 0;
 }
 .benefits div span .benefit-img {
-  /* width: 25px; */
   padding-right: 1rem;
 }
 .benefits div span h4 {
@@ -237,6 +237,77 @@ input:focus {
   font-size: 14px;
   font-weight: 600;
 }
+/* SLIDER-PRODUCTS========================================================================================================= */
+.products {
+  width: 1090px;
+  margin: 0 auto;
+  position: relative;
+  clear: both;
+}
+.products h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+.products .slick-products .product {
+  margin-right: 2.2rem;
+}
+.products .slick-products .product .product-img {
+  max-width: 229px;
+  height: 229px;
+}
+.products .slick-products .product h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  max-width: 229px;
+  margin-top: 0.6rem;
+  line-height: 16.9px;
+  height: 52px;
+}
+.products .slick-products .product div {
+  margin-top: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 242px;
+}
+.products .slick-products .product div div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.products .slick-products .product div div h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.products .slick-products .product div div h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #989898;
+  text-decoration: line-through;
+}
+.products .slick-products .product div div:nth-child(2) {
+  background: #00beff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.9rem;
+}
+.products .slick-products .product div div a .product-basket {
+  width: 20px;
+  color: #fff;
+}
+
 @media (max-width: 900px) {
   /* TOPBAR========================================================================================================= */
   .topbar {
@@ -421,6 +492,7 @@ input:focus {
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
   .benefits div span {
     width: 50%;
@@ -439,5 +511,11 @@ input:focus {
   }
   .benefits div span h4 {
     width: 80%;
+  }
+  /* SLIDER-PRODUCTS========================================================================================================= */
+  .products h1 {
+    font-size: 25px;
+    margin-top: 2.1rem;
+    margin-left: 0;
   }
 }
