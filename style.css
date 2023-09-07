@@ -198,14 +198,12 @@ input:focus {
 }
 /* SLIDER========================================================================================================= */
 .slider {
-  /* width: 1200px; */
   height: 460px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .slider .slider-one-desktop {
-  margin: 0 auto;
 }
 .slider .slider-one-mobile {
   display: none;
@@ -215,23 +213,25 @@ input:focus {
 .benefits {
   width: 100%;
   background: #00beff;
-  height: 65px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 .benefits div {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.benefits div span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   margin: 0 1.5rem;
+  padding: 1rem 0;
 }
-.benefits div .benefit-img {
+.benefits div span .benefit-img {
   /* width: 25px; */
   padding-right: 1rem;
 }
-.benefits div h4 {
+.benefits div span h4 {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -402,10 +402,11 @@ input:focus {
   /* SLIDER========================================================================================================= */
   .slider {
     width: 100%;
-    height: 460px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-bottom: 2.6rem;
   }
   .slider .slider-one-desktop {
     display: none;
@@ -414,13 +415,29 @@ input:focus {
     display: initial;
   }
   /* BENEFITS========================================================================================================= */
-  .benefits {
-    display: none;
-    width: 100%;
-    background: #00beff;
-    height: 65px;
+  .benefits div {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
+    align-items: center;
+  }
+  .benefits div span {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 0.4rem 0;
+    padding: 0;
+    text-align: center;
+  }
+  .benefits div span .benefit-img {
+    padding-right: 0;
+    padding-bottom: 0.3rem;
+    padding-top: 0.1rem;
+  }
+  .benefits div span h4 {
+    width: 80%;
   }
 }
