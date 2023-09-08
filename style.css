@@ -523,6 +523,19 @@ input:focus {
   .products h1 {
     font-size: 25px;
     margin-top: 2.1rem;
+    margin-bottom: 2.5rem;
     margin-left: 0;
+  }
+  .products .slick-products {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+  }
+  .products .slick-products .product {
+    min-width: 215px;
+  }
+  .products .slick-products .product .product-img {
+    width: 180px;
+    height: 180px;
   }
 }
