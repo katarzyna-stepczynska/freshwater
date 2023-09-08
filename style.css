@@ -239,10 +239,12 @@ input:focus {
 }
 /* SLIDER-PRODUCTS========================================================================================================= */
 .products {
-  width: 1090px;
   margin: 0 auto;
   position: relative;
-  clear: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .products h1 {
   font-family: "Poppins", sans-serif;
@@ -253,18 +255,23 @@ input:focus {
   margin-left: 2rem;
   margin-bottom: 4rem;
 }
+.products .slick-products {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+}
 .products .slick-products .product {
-  margin-right: 2.2rem;
+  min-width: 293px;
 }
 .products .slick-products .product .product-img {
-  max-width: 229px;
+  width: 229px;
   height: 229px;
 }
 .products .slick-products .product h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 13px;
-  max-width: 229px;
+  width: 229px;
   margin-top: 0.6rem;
   line-height: 16.9px;
   height: 52px;
@@ -274,7 +281,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 242px;
+  width: 242px;
 }
 .products .slick-products .product div div:nth-child(1) {
   display: flex;
