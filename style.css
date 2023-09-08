@@ -533,6 +533,7 @@ input:focus {
   }
   .products .slick-products .product {
     min-width: 215px;
+    height: 368px;
   }
   .products .slick-products .product .product-img {
     width: 180px;
