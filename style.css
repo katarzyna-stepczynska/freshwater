@@ -325,7 +325,31 @@ input:focus {
   width: 20px;
   color: #fff;
 }
-
+/* BANNERS========================================================================================================= */
+.banners {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+.banners div {
+  position: relative;
+  margin-left: 1rem;
+}
+.banners div .banner-img {
+  position: relative;
+}
+.banners div h1 {
+  position: absolute;
+  color: #fff;
+  bottom: 1.25rem;
+  right: 1.5rem;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
 @media (max-width: 1200px) {
   /* TOPBAR========================================================================================================= */
   .topbar {
@@ -552,5 +576,14 @@ input:focus {
   .products .slick-products .product .product-img {
     width: 180px;
     height: 180px;
+  }
+  /* BANNERS========================================================================================================= */
+  .banners {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .banners div {
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
 }
