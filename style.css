@@ -115,6 +115,7 @@ input:focus {
 
 .navbar ul {
   position: relative;
+  padding-right: 13rem;
 }
 
 .navbar ul li {
