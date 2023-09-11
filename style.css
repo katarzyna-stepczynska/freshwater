@@ -350,6 +350,49 @@ input:focus {
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
+/* SPECIAL========================================================================================================= */
+.special {
+  padding-top: 3.6rem;
+}
+.special h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 1rem;
+}
+.special div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+  margin-left: 1rem;
+}
+.special div a .first {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #00beff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 4rem;
+  margin: 0 1rem;
+}
+.special div a .second {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #00beff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 2rem;
+  margin: 0 1rem;
+}
 @media (max-width: 1200px) {
   /* TOPBAR========================================================================================================= */
   .topbar {
@@ -580,10 +623,38 @@ input:focus {
   /* BANNERS========================================================================================================= */
   .banners {
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    background-color: #eff0f5;
+    padding-top: 1rem;
   }
   .banners div {
     margin-left: 0;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  /* SPECIAL========================================================================================================= */
+  .special {
+    padding-top: 2rem;
+    background-color: #eff0f5;
+  }
+  .special h2 {
+    font-size: 20px;
+    margin: 0 4rem;
+    line-height: 25px;
+  }
+  .special div {
+    flex-direction: column;
+    margin: 0.7rem 0;
+  }
+  .special div a .first {
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 0;
+  }
+  .special div a .second {
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
   }
 }
