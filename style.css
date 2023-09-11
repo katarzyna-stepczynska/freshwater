@@ -352,7 +352,8 @@ input:focus {
 }
 /* SPECIAL========================================================================================================= */
 .special {
-  padding-top: 3.6rem;
+  width: 100%;
+  padding: 3.6rem 0;
 }
 .special h2 {
   font-family: "Poppins", sans-serif;
@@ -392,6 +393,54 @@ input:focus {
   border-radius: 20px;
   padding: 0.6rem 2rem;
   margin: 0 1rem;
+}
+/* BLOG========================================================================================================= */
+.blog {
+  display: block;
+  width: 100%;
+  background-color: #eff0f5;
+  padding: 5rem 0;
+}
+.blog h1 {
+  margin-left: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+.blog p {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+.blog div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4rem;
+  margin-left: 1rem;
+}
+.blog div .post {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0.7rem;
+}
+.blog div .post h4 {
+  margin-top: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.blog div .post h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
 }
 @media (max-width: 1200px) {
   /* TOPBAR========================================================================================================= */
@@ -625,7 +674,7 @@ input:focus {
     flex-direction: column;
     margin-top: 1rem;
     background-color: #eff0f5;
-    padding-top: 1rem;
+    padding: 1rem 0;
   }
   .banners div {
     margin-left: 0;
@@ -633,7 +682,7 @@ input:focus {
   }
   /* SPECIAL========================================================================================================= */
   .special {
-    padding-top: 2rem;
+    padding-top: 1rem;
     background-color: #eff0f5;
   }
   .special h2 {
@@ -656,5 +705,38 @@ input:focus {
     border-radius: 20px;
     padding: 0.5rem 2rem;
     margin: 1rem 0;
+  }
+  /* BLOG========================================================================================================= */
+  .blog {
+    display: block;
+    width: 100%;
+    background-color: #eff0f5;
+    padding: 0.5rem 0;
+  }
+  .blog h1 {
+    margin-left: 0;
+    font-size: 25px;
+  }
+  .blog div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .blog div .post {
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  .blog div .post img {
+    /* margin: 0.8rem; */
+    width: 99.5%;
+  }
+  .blog div .post h3 {
+    margin: 0 3rem;
+    text-align: center;
   }
 }
