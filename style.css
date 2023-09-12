@@ -678,7 +678,11 @@ input:focus {
   }
   .banners div {
     margin-left: 0;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
+  }
+  .banners div img {
+    width: 100%;
+    height: 260px;
   }
   /* SPECIAL========================================================================================================= */
   .special {
@@ -711,32 +715,32 @@ input:focus {
     display: block;
     width: 100%;
     background-color: #eff0f5;
-    padding: 0.5rem 0;
+    padding: 0.2rem 0 0.4rem 0;
   }
   .blog h1 {
     margin-left: 0;
     font-size: 25px;
   }
+  .blog p {
+    margin-left: 0;
+  }
   .blog div {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 1.4rem;
-    margin-left: 1rem;
+    margin-left: 0;
   }
 
   .blog div .post {
     justify-content: center;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 0;
   }
   .blog div .post img {
-    /* margin: 0.8rem; */
-    width: 99.5%;
+    width: 345px;
+    height: 230px;
   }
   .blog div .post h3 {
-    margin: 0 3rem;
+    margin: 0.4rem 3.5rem 1.1rem 3rem;
     text-align: center;
   }
 }
