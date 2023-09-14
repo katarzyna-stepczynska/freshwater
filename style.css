@@ -447,6 +447,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   padding-top: 1.5rem;
+  justify-content: space-between;
 }
 .newsletter div .newsletter-img {
   padding-left: 7.4rem;
@@ -457,16 +458,21 @@ input:focus {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  margin-right: 2rem;
 }
-.newsletter .form-newsletter h1 {
+.newsletter .form-newsletter .newsletter-title-desktop {
   text-align: center;
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 45px;
   margin-top: 4.5rem;
+  display: block;
 }
-.newsletter .form-newsletter p {
+.newsletter .form-newsletter .newsletter-title-mobile {
+  display: none;
+}
+.newsletter .form-newsletter h6 {
   text-align: center;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -476,7 +482,8 @@ input:focus {
 .newsletter .form-newsletter form {
   display: flex;
   flex-direction: column;
-  margin: 1.4rem 8.5rem 0 8.5rem;
+  margin-top: 1.4rem;
+  max-width: 710.59px;
 }
 .newsletter .form-newsletter form input[type="text"] {
   background-color: #fff;
@@ -505,13 +512,17 @@ input:focus {
   border: 1px solid #dedede;
   border-radius: 0px;
 }
-.newsletter .form-newsletter form .form-checkbox label {
+.newsletter .form-newsletter form .form-checkbox .newsletter-label-desktop {
   color: #000;
   font-size: 12px;
   font-weight: 400;
   line-height: 17.6px;
   margin-left: 1rem;
   margin-right: 5rem;
+  display: block;
+}
+.newsletter .form-newsletter form .form-checkbox .newsletter-label-mobile {
+  display: none;
 }
 .btn-submit {
   width: 272.23px;
@@ -525,7 +536,7 @@ input:focus {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.8rem;
 }
 @media (max-width: 1200px) {
   /* TOPBAR========================================================================================================= */
@@ -832,7 +843,7 @@ input:focus {
   .newsletter {
     display: flex;
     flex-direction: column-reverse;
-    padding-top: 1.5rem;
+    padding-top: 0;
   }
   .newsletter div .newsletter-img {
     padding: 0;
@@ -844,73 +855,47 @@ input:focus {
     /* justify-content: center; */
     align-items: center;
   }
-  .newsletter .form-newsletter h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    line-height: 45px;
-    margin-top: 4.5rem;
+  .newsletter .form-newsletter .newsletter-title-desktop {
+    display: none;
   }
-  .newsletter .form-newsletter p {
+  .newsletter .form-newsletter .newsletter-title-mobile {
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    line-height: 20.8px;
+    font-weight: 600;
+    line-height: 37.5px;
+    margin: 0 2rem;
+    display: block;
+  }
+  .newsletter .form-newsletter .newsletter-title-mobile span {
+    color: #00beff;
+  }
+  .newsletter .form-newsletter h6 {
+    margin-top: 0.5rem;
   }
   .newsletter .form-newsletter form {
     display: flex;
     flex-direction: column;
-    margin: 1.4rem 8.5rem 0 8.5rem;
+    margin: 1rem 2rem 0 2rem;
   }
-  .newsletter .form-newsletter form input[type="text"] {
-    background-color: #fff;
-    border: 1px solid #eceef3;
-    width: 100%;
-    height: 38px;
-    border-radius: 19px;
-    color: #eceef3;
-    padding-left: 25px;
-    font-size: 14px;
+  .newsletter .form-newsletter form .form-checkbox .newsletter-label-desktop {
+    display: none;
   }
-  .newsletter .form-newsletter form input::placeholder {
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-  }
-  .newsletter .form-newsletter form .form-checkbox {
-    display: flex;
-    flex-direction: row;
-    margin-top: 0.5rem;
-    justify-content: flex-starts;
-    align-items: flex-start;
-  }
-  .newsletter .form-newsletter form .form-checkbox #submit {
-    border: 1px solid #dedede;
-    border-radius: 0px;
-  }
-  .newsletter .form-newsletter form .form-checkbox label {
+  .newsletter .form-newsletter form .form-checkbox .newsletter-label-mobile {
     color: #000;
     font-size: 12px;
     font-weight: 400;
     line-height: 17.6px;
     margin-left: 1rem;
-    margin-right: 5rem;
+    display: block;
   }
   .btn-submit {
-    width: 272.23px;
-    background-color: #4e4b66;
-    padding: 0.5rem 0;
-    border: none;
-    border-radius: 18px;
-    cursor: pointer;
-    color: white;
-    font-size: 14px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 2rem;
+    width: 130px;
+    margin-top: 0.2rem;
+  }
+  .newsletter div .water-img {
+    width: 100%;
+    height: 301px;
+    margin-top: 1.3rem;
   }
 }

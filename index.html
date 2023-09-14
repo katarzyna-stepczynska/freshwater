@@ -313,22 +313,31 @@
         />
       </div>
       <div class="form-newsletter">
-        <h1>Bądź na bieżąco z aktualnymi promocjami.</h1>
-        <p>Dołącz do newslettera.</p>
+        <h1 class="newsletter-title-desktop">
+          Bądź na bieżąco z aktualnymi promocjami.
+        </h1>
+        <h1 class="newsletter-title-mobile">
+          Zyskaj<span> 15% zniżki </span>na pierwsze zakupy
+        </h1>
+        <h6>Dołącz do newslettera.</h6>
         <form>
           <input type="text" placeholder="Twój email" name="search" />
           <div class="form-checkbox">
             <input type="checkbox" id="submit" name="submit" />
-            <label for="submit">
+            <label class="newsletter-label-desktop" for="submit">
               Chcę otrzymywać E-mail Newsletter. Wyrażam zgodę na przetwarzanie
               moich danych osobowych do celów marketingowych zgodnie z polityką
+              prywatności</label
+            >
+            <label class="newsletter-label-mobile" for="submit">
+              Wyrażam zgodę na przetwarzanie moich danych zgodnie z polityką
               prywatności</label
             >
           </div>
         </form>
         <button class="btn-submit">Zapisz się</button>
       </div>
-      <div><img src="image/water_desktop.png" /></div>
+      <div><img class="water-img" src="image/water_desktop.png" /></div>
     </section>
     <script
       type="text/javascript"
