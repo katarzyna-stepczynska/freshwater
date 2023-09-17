@@ -567,8 +567,13 @@ input:focus {
   font-size: 32px;
   margin-left: 0.6rem;
 }
+.footer .logo-footer div .logo-img {
+  width: 36px;
+  height: 36px;
+}
 .footer .logo-footer div span {
   font-size: 23px;
+  margin-right: 1rem;
 }
 .footer .dropdown {
   display: flex;
@@ -985,6 +990,7 @@ input:focus {
   .footer {
     display: flex;
     flex-direction: column;
+    padding-top: 2.5rem;
   }
   .footer .logo-footer {
     margin: 0;
@@ -996,5 +1002,18 @@ input:focus {
   }
   .footer .logo-footer div h2 {
     font-size: 40px;
+  }
+  .footer .logo-footer div .logo-img {
+    width: 47px;
+    height: 47px;
+  }
+  .footer .logo-footer div span {
+    margin: 2rem 0.5rem;
+  }
+  .footer .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1.8rem;
   }
 }
