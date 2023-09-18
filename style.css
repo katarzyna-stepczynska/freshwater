@@ -628,6 +628,9 @@ input:focus {
   line-height: 15.4px;
   margin: 0.95rem 0;
 }
+.footer .line {
+  display: none;
+}
 @media (max-width: 1200px) {
   /* TOPBAR========================================================================================================= */
   .topbar {
@@ -1014,6 +1017,43 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 1.8rem;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer .dropdown h3 {
+    text-align: center;
+  }
+  .footer .dropdown h5 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .footer .dropdown span {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .footer .dropdown ul li a h3 {
+    text-align: left;
+    padding-bottom: 0;
+    padding-top: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .footer .dropdown ul li a h5 {
+    text-align: left;
+    margin-bottom: 0.7rem;
+  }
+  .footer .dropdown:nth-child(5) ul li a h3 {
+    padding-bottom: 1.1rem;
+  }
+  .footer .dropdown:nth-child(3),
+  .footer .dropdown:nth-child(4) {
+    border-top: 1px solid #fff;
+  }
+  .footer .dropdown:nth-child(5) {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .footer .dropdown ul li ul {
+    display: none;
   }
 }
