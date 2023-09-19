@@ -580,9 +580,6 @@ input:focus {
   flex-direction: column;
   margin: 0 1.8rem;
 }
-/* .footer div:last-child {
-  margin: 0 2rem;
-} */
 .footer .dropdown span {
   font-family: "Poppins", sans-serif;
   font-size: 26px;
@@ -599,6 +596,10 @@ input:focus {
 .footer .dropdown ul li a {
   color: #fff;
 }
+.footer .dropdown ul li a .arrow-mobile {
+  display: none;
+}
+
 .footer .dropdown h3 {
   font-family: "Poppins";
   font-weight: 700;
@@ -628,8 +629,18 @@ input:focus {
   line-height: 15.4px;
   margin: 0.95rem 0;
 }
-.footer .line {
-  display: none;
+/* FOOTER LAST========================================================================================================= */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+footer h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
 }
 @media (max-width: 1200px) {
   /* TOPBAR========================================================================================================= */
@@ -994,6 +1005,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     padding-top: 2.5rem;
+    padding-bottom: 1.3rem;
   }
   .footer .logo-footer {
     margin: 0;
@@ -1031,7 +1043,14 @@ input:focus {
     text-align: center;
     margin-top: 0.5rem;
   }
-
+  .footer .dropdown ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .dropdown ul li a .arrow-mobile {
+    display: inline-block;
+  }
   .footer .dropdown ul li a h3 {
     text-align: left;
     padding-bottom: 0;
@@ -1040,7 +1059,8 @@ input:focus {
   }
   .footer .dropdown ul li a h5 {
     text-align: left;
-    margin-bottom: 0.7rem;
+    /* margin-bottom: 0.7rem; */
+    margin: 0.5rem 0;
   }
   .footer .dropdown:nth-child(5) ul li a h3 {
     padding-bottom: 1.1rem;
@@ -1055,5 +1075,17 @@ input:focus {
   }
   .footer .dropdown ul li ul {
     display: none;
+  }
+  /* FOOTER LAST========================================================================================================= */
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.5rem 0;
+  }
+  footer h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0.6rem;
   }
 }
